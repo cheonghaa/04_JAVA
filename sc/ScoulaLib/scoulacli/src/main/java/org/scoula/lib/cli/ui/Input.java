@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Input {
     static Scanner scanner = new Scanner(System.in);
+
     public static int getInt(String title) {
         System.out.print(title);
         return Integer.parseInt
@@ -14,11 +15,13 @@ public class Input {
         System.out.print(title);
         return scanner.nextLine();
     }
+
+//수정하기
     public static String getLine(String title, String defaultValue) {
 // 이름(김길동):
         System.out.printf("%s(%s): ", title, defaultValue);
         String answer = scanner.nextLine();
-// 그냥 엔터 쳤으면 defaultValue 리턴, 입력값이 있으면 answer 리터
+// 그냥 엔터 쳤으면 defaultValue 리턴, 입력값이 있으면 answer 리턴
         return answer.isEmpty() ? defaultValue : answer;
     }
 
