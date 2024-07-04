@@ -1,15 +1,13 @@
 package org.scoula.todo.command;
 
-import org.scoula.lib.cli.App;
 import org.scoula.lib.cli.command.Command;
 import org.scoula.lib.cli.ui.Input;
-import org.scoula.lib.cli.ui.Menu;
-import org.scoula.lib.cli.ui.MenuItem;
 import org.scoula.todo.dao.TodoDao;
+import org.scoula.todo.dao.TodoListDao;
 import org.scoula.todo.domain.Todo;
 
 public class DetailTodoCommand implements Command {
-    TodoDao dao = TodoDao.getInstance();
+    TodoDao dao = TodoListDao.getInstance();
     @Override
     public void execute() {
         int id = Input.getInt("Todo Id: ");
