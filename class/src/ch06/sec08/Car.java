@@ -1,4 +1,4 @@
-package ch06.sec08.exam03;
+package ch06.sec08;
 
 public class Car {
     int gas;

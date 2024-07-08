@@ -1,7 +1,7 @@
-package ch2.sec13.ch02.sec13;
+package ch02.sec13;
+
 
 import com.sun.tools.javac.Main;
-
 import java.util.Scanner;
 
 public class ScannerExample {
@@ -30,6 +30,6 @@ public class ScannerExample {
             System.out.println("출력 문자열 : " + data);
             System.out.println();
         }
-    System.out.println("종료");
+        System.out.println("종료");
     }
 }
