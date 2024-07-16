@@ -10,6 +10,10 @@ public abstract class App {
     Menu menu;
     public App() {
     }
+
+    public void setMenu(Menu menu) {
+        this.menu = menu;
+    }
     public void init() {
         menu = new Menu();
         createMenu(menu);
